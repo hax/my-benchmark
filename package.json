@@ -1,0 +1,32 @@
+{
+	"name": "my-benchmark",
+	"version": "1.0.0",
+	"description": "A JavaScript microbenchmark support library",
+	"main": "lib/node8",
+	"module": "lib/module",
+	"files": ["lib", "src"],
+	"scripts": {
+		"dev": "tsc -w",
+		"test": "node -r @std/esm test",
+		"prepair": "./build.sh"
+	},
+	"@std/esm": "js",
+	"repository": {
+		"type": "git",
+		"url": "hax/my-benchmark"
+	},
+	"author": "HE Shi-Jun <johnhax@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hax/my-benchmark/issues"
+	},
+	"homepage": "https://github.com/hax/my-benchmark#readme",
+	"devDependencies": {
+		"@std/esm": "^0.18.0",
+		"@types/node": "^8.5.1",
+		"benchmark": "^2.1.4",
+		"tslint": "^5.8.0",
+		"typescript": "^2.7.0-dev.20171214"
+	},
+	"dependencies": {}
+}

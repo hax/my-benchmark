@@ -49,7 +49,7 @@ export default class Timer {
 		let updates = 0
 		let noUpdates = 0
 		let t0 = this.now()
-		const end = t0 + 32
+		const end = t0 + 15 // run at least 15ms
 		for (;;) {
 			const t1 = this.now()
 			const dt = t1 - t0

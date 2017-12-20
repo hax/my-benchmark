@@ -43,7 +43,7 @@ export default class Timer {
 
 	private initRes(): [timestamp, timestamp, () => timestamp] {
 
-		let minInterval = 1000
+		let minInterval = Infinity
 		let maxNoUpdates = 0
 
 		let updates = 0

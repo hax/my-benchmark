@@ -1,0 +1,19 @@
+{
+	"extends": [
+		"tslint:latest"
+	],
+	"rules": {
+		"indent": [true, "tabs"],
+		"semicolon": [true, "never"],
+		"no-consecutive-blank-lines": [true, 2],
+		"curly": [true, "ignore-same-line"],
+		"no-console": [false],
+		"quotemark": [true, "single", "avoid-template", "avoid-escape"],
+		"interface-name": [true, "never-prefix"],
+		"object-literal-sort-keys": [true, "match-declaration-order"],
+		"arrow-parens": [true, "ban-single-arg-parens"],
+		"member-access": [true, "no-public"],
+		"max-classes-per-file": [true, "exclude-class-expressions"],
+		"no-this-assignment": [true, {"allow-destructuring": true}]
+	}
+}

@@ -70,11 +70,11 @@ export default class Timer {
 		} else {
 			if (!Number.isInteger(minInterval)) minInterval = Number(minInterval.toPrecision(2))
 			return [minInterval, minInterval / maxNoUpdates, () => {
-				const t0 = this.now()
-				let t1
-				do t1 = this.now()
-				while (t1 === t0)
-				return t1
+				const last = this.now()
+				let now
+				do now = this.now()
+				while (now === last)
+				return now
 			}]
 		}
 	}

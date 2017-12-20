@@ -25,9 +25,9 @@ export default class Timer {
 	readonly newStartNow: () => timestamp
 
 	constructor(...apis: TimerAPI[]) {
-		if (apis.length === 0) apis = Object.keys(timerAPIs) as TimerAPI[]
-		;[this.api, this.now] = this.initAPI(apis)
-		;[this.resolution, this.cost, this.newStartNow] = this.initRes()
+		if (apis.length === 0) apis = Object.keys(timerAPIs) as TimerAPI[];
+		[this.api, this.now] = this.initAPI(apis);
+		[this.resolution, this.cost, this.newStartNow] = this.initRes()
 	}
 
 	private initAPI(apis: TimerAPI[]): [TimerAPI | 'new Date', () => timestamp] {
